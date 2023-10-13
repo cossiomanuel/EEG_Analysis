@@ -23,7 +23,21 @@ Our analysis focuses on detecting six key events related to grasp and lift hand 
 5. **Replace**
 6. **BothReleased**
 
-In addition to event detection, our pipeline includes comprehensive data exploration. Functions have been developed to graph each channel in a compound graph, providing preliminary insights. Furthermore, a surface graph is generated, visualizing all channels together for holistic exploration of neural activity patterns.
+In addition to event detection, our pipeline includes comprehensive data exploration. Functions have been developed to graph each channel in a compound graph, providing preliminary insights.
+
+<div align="center">
+  <img src="Figures/EEG_1.png" width=80% height=80% alt="RM.">
+</div>
+
+Furthermore, a surface graph is generated, visualizing all channels together for holistic exploration of neural activity patterns.
+
+
+
+
+
+
+
+
 
 ## Classification with Random Forest
 
