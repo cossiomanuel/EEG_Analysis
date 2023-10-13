@@ -43,6 +43,23 @@ Furthermore, a surface graph is generated, visualizing all channels together for
 
 The analysis employs a Random Forest classifier. The classification report provides detailed metrics for each event class, including precision, recall, and F1-score. Moreover, the pipeline identifies the top 10 important features contributing to the classification. Additionally, a specialized function is implemented to predict the top features per class for a more granular understanding of neural activity patterns associated with each event.
 
+### Global classification with RF
+
+**Accuracy:** 0.86
+
+|                | Precision | Recall | F1-Score | Support |
+|----------------|-----------|--------|----------|---------|
+| **HandStart**            | 0.99      | 0.19   | 0.31     | 1547    |
+| **FirstDigitTouch**       | 1.00      | 0.09   | 0.16     | 1521    |
+| **BothStartLoadPhase**    | 1.00      | 0.08   | 0.15     | 1541    |
+| **LiftOff**              | 0.98      | 0.13   | 0.22     | 1451    |
+| **Replace**              | 0.99      | 0.11   | 0.19     | 1520    |
+| **BothReleased**         | 0.99      | 0.13   | 0.22     | 1562    |
+| **Micro Avg**            | 0.99      | 0.12   | 0.21     | 9142    |
+| **Macro Avg**            | 0.99      | 0.12   | 0.21     | 9142    |
+| **Weighted Avg**         | 0.99      | 0.12   | 0.21     | 9142    |
+| **Samples Avg**          | 0.02      | 0.02   | 0.02     | 9142    |
+
 Feel free to explore the Jupyter Notebooks in the `notebooks/` directory for a step-by-step walkthrough of the analysis pipeline. The code in the `src/` directory provides modular components for data processing, event prediction, and detailed visualization.
 
 We encourage you to use this repository as a resource for learning, research, and experimentation in the field of EEG analysis. Happy coding!
