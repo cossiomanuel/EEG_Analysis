@@ -1,3 +1,9 @@
+![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+
 # EEG Analysis Pipeline for Grasp and Lift Hand Movements Prediction
 
 Welcome to the EEG Analysis Pipeline repository, dedicated to predicting grasp and lift hand movements using multi-channel EEG recordings. This project explores a rich dataset sourced from the study conducted by Luciw MD, Jarocka E, and Edin BB in 2014, encompassing a staggering 3,936 grasp and lift trials. The trials vary in weight and friction, making the dataset a valuable resource for understanding the intricacies of neural activity associated with hand movements.
