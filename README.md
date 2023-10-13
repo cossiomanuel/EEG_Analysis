@@ -43,7 +43,7 @@ Furthermore, a surface graph is generated, visualizing all channels together for
 
 The analysis employs a Random Forest classifier. The classification report provides detailed metrics for each event class, including precision, recall, and F1-score. Moreover, the pipeline identifies the top 10 important features contributing to the classification. Additionally, a specialized function is implemented to predict the top features per class for a more granular understanding of neural activity patterns associated with each event.
 
-### Global classification with RF
+### Global Classification with RF
 
 **Accuracy:** 0.86
 
@@ -59,6 +59,36 @@ The analysis employs a Random Forest classifier. The classification report provi
 | **Macro Avg**            | 0.99      | 0.12   | 0.21     | 9142    |
 | **Weighted Avg**         | 0.99      | 0.12   | 0.21     | 9142    |
 | **Samples Avg**          | 0.02      | 0.02   | 0.02     | 9142    |
+
+### Global Feature Importance
+
+| Feature | Importance |
+|---------|------------|
+| F8      | 0.049340   |
+| Fp1     | 0.044739   |
+| Fp2     | 0.042284   |
+| FC1     | 0.040208   |
+| TP10    | 0.039865   |
+| FC6     | 0.038916   |
+| F7      | 0.036478   |
+| Cz      | 0.035935   |
+| FC2     | 0.035217   |
+| CP1     | 0.034244   |
+
+### Feature Importance per Class
+
+| **Class: HandStart**             | **Class: FirstDigitTouch**      | **Class: BothStartLoadPhase**  | **Class: LiftOff**             | **Class: Replace**             | **Class: BothReleased**        |
+|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|
+| F8 - Frontal (R)                | F8 - Frontal (R)                | F8 - Frontal (R)                | F8 - Frontal (R)                | Fp1 - Frontal (L)               | Fp1 - Frontal (L)               |
+| Cz - Central                    | FC6 - Frontocentral (R)         | Fp2 - Frontal (R)               | TP10 - Temporal (R)             | Fp2 - Frontal (R)               | F8 - Frontal (R)                |
+| Fp2 - Frontopolar (R)           | Fp2 - Frontopolar (R)           | Fp1 - Frontopolar (L)          | FC6 - Frontocentral (R)         | F8 - Frontal (R)                | Fp2 - Frontopolar (R)          |
+| Fp1 - Frontopolar (L)           | Fp1 - Frontopolar (L)           | FC1 - Frontocentral (L)         | Fp2 - Frontopolar (R)          | TP10 - Temporal (R)             | FC1 - Frontocentral (L)         |
+| FC1 - Frontocentral (L)         | FC1 - Frontocentral (L)         | F7 - Frontal (L)                | FC1 - Frontocentral (L)         | Cz - Central                    | TP10 - Temporal (R)             |
+| CP2 - Centroparietal (R)        | F7 - Frontal (L)                | TP10 - Temporal (R)            | Fp1 - Frontopolar (L)          | Fz - Frontal                    | Fz - Frontal                    |
+| FC6 - Frontocentral (R)         | TP10 - Temporal (R)            | CP1 - Centroparietal (L)       | Fp1 - Frontopolar (L)          | F7 - Frontal (L)                | F7 - Frontal (L)                |
+| P3 - Parietal (L)               | CP1 - Centroparietal (L)       | CP5 - Centroparietal (L)       | F7 - Frontal (L)                | FC2 - Frontocentral (R)         | FC2 - Frontocentral (R)         |
+| CP1 - Centroparietal (L)        | CP2 - Centroparietal (R)       | FC2 - Frontocentral (R)        | T7 - Temporal (L)               | FC6 - Frontocentral (R)         | FC6 - Frontocentral (R)         |
+| CP5 - Centroparietal (L)        | FC2 - Frontocentral (R)        |                                 | CP2 - Centroparietal (R)        |                                 | TP9 - Temporal (L)              |
 
 Feel free to explore the Jupyter Notebooks in the `notebooks/` directory for a step-by-step walkthrough of the analysis pipeline. The code in the `src/` directory provides modular components for data processing, event prediction, and detailed visualization.
 
