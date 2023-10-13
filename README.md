@@ -90,6 +90,6 @@ The analysis employs a Random Forest classifier. The classification report provi
 | CP1 - Centroparietal (L)        | CP2 - Centroparietal (R)       | FC2 - Frontocentral (R)        | T7 - Temporal (L)               | FC6 - Frontocentral (R)         | FC6 - Frontocentral (R)         |
 | CP5 - Centroparietal (L)        | FC2 - Frontocentral (R)        |                                 | CP2 - Centroparietal (R)        |                                 | TP9 - Temporal (L)              |
 
-Feel free to explore the Jupyter Notebooks in the `notebooks/` directory for a step-by-step walkthrough of the analysis pipeline. The code in the `src/` directory provides modular components for data processing, event prediction, and detailed visualization.
+Feel free to explore the Jupyter Notebooks in the `Notebook/` directory for a step-by-step walkthrough of the analysis pipeline. 
 
-We encourage you to use this repository as a resource for learning, research, and experimentation in the field of EEG analysis. Happy coding!
+We encourage you to use this repository as a resource for learning, research, and experimentation in the field of EEG analysis.
